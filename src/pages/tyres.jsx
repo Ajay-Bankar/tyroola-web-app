@@ -61,7 +61,8 @@ const TyresLandingPage = () => {
       >
         <h2 className="text-2xl font-bold mb-4">Tyre Types</h2>
         <ul className={`
-          ${isSmallScreen ? 'flex flex-row overflow-x-auto gap-2' : 'flex flex-col gap-2'}
+          ${isSmallScreen ? 'flex flex-row overflow-x-auto  gap-2' : 'flex flex-col gap-2'}
+          scrollbar-hide
         `}>
           {tyreTypes.map((tyre) => (
             <li
