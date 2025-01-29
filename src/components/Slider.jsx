@@ -26,13 +26,13 @@ const Slider = () => {
   return (
     <div className="relative w-full">
       {/* Image Container */}
-      <div className="relative h-[130px] md:h-[400px] lg:h-[400px] w-full overflow-hidden">
+      <div className="relative h-[140px] md:h-[400px] lg:h-[400px] w-full overflow-hidden">
         {slides.map((slide, index) => (
           <img
             key={index}
             src={slide}
             alt={`Slide ${index + 1}`}
-            className={`absolute inset-0 w-full h-[130px] md:h-[400px] lg:h-[400px] transition-opacity duration-700 ${
+            className={`absolute inset-0 w-full h-[140px] md:h-[400px] lg:h-[400px]  transition-opacity duration-700 ${
               index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
           />
