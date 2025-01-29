@@ -39,11 +39,11 @@ const WheelPage = () => {
       {/* Sidebar */}
       <aside className={`${isSmallScreen ? 'w-full' : 'w-80 min-h-screen'} bg-gray-800 text-white p-4`}>
         <h2 className="text-2xl font-bold mb-4">Product categories</h2>
-        <ul className={`${isSmallScreen ? 'flex flex-row overflow-x-auto gap-2' : 'flex flex-col gap-2'} scrollbar-hide`}>
+        <ul className={`${isSmallScreen ? 'flex flex-row overflow-x-auto gap-2 whitespace-nowrap' : 'flex flex-col gap-2'} scrollbar-hide`}>
           {wheelTypes.map((wheel) => (
             <li
               key={wheel.id}
-              className={`cursor-pointer py-2 px-4 rounded-lg ${selectedTyreType === wheel.id ? "bg-blue-500" : "hover:bg-gray-700"}`}
+              className={`cursor-pointer py-1 px-4 rounded-lg ${selectedTyreType === wheel.id ? "bg-blue-500" : "hover:bg-gray-700"}`}
               onClick={() => setSelectedTyreType(wheel.id)}
             >
               {wheel.name}
