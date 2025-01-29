@@ -50,40 +50,40 @@ const Home = () => {
             {[
               {
                 id: 1,
-                image: "https://ik.imagekit.io/ntvz9dezi1x/tyre/comforser/cf_3000_mt/cf_3000_mt.png?tr=q-90,w-400,h-400,cm-pad_resize",
+                image: "../images/mud1.jpg",
                 title: "Mud Tyres",
                 description: "All-season performance",
                 price: "From $89.99",
               },
               {
                 id: 2,
-                image: "https://ik.imagekit.io/ntvz9dezi1x/tyre/continental/premiumcontact_c/CONTINENTAL_PREMIUMCONTACT_C-1.png?tr=q-90,w-400,h-400,cm-pad_resize",
+                image: "../images/f1.png",
                 title: " Goodride Solmax",
                 description: "High durability and comfort",
                 price: "From $99.99",
               },
               {
                 id: 3,
-                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZcs5CMgLOcNobcFOvLcl7XnOSYC8ITm2dg&s",
+                image: "../images/f4.png",
                 title: "Premium Tyre 3",
                 description: "Optimized for wet roads",
                 price: "From $79.99",
               },
               {
                 id: 4,
-                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyN2MHhW2nXnaTNF9MZMzGK363FKUfzBnWzw&s",
+                image: "../images/f5.jpg",
                 title: "WINRUN KF 997 305/45R22 118V",
                 description: "Superior grip and control",
                 price: "From $109.99",
               },
             ].map((tyre) => (
-              <div key={tyre.id} className="border rounded-lg overflow-hidden">
+              <div key={tyre.id} className="border rounded-lg overflow-hidden flex flex-col justify-center items-center">
                 {/* Tyre Image */}
-                <div className="">
+                <div className=" p-4">
                   <img
                     src={tyre.image}
                     alt={tyre.title}
-                    className="w-[300px] h-[300px] object-contain"
+                    className="w-[300px] h-[250px] object-contain"
                   />
                 </div>
                 {/* Tyre Details */}
@@ -106,14 +106,15 @@ const Home = () => {
        <div className="bg-white py-16">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-8">Our Partner Brands</h2>
-          <div className="grid md:grid-cols-6 gap-6">
+          <div className="grid md:grid-cols-4 gap-6">
             {[
-              "https://etimg.etb2bimg.com/photo/89607504.cms",
-              "https://logos-world.net/wp-content/uploads/2023/03/Hankook-Logo-1999.png",
-              "https://www.timeattack.co.uk/wp-content/uploads/2024/08/yokohama.png ",
-              "https://seekvectorlogo.com/wp-content/uploads/2018/10/toyo-tires-vector-logo.png",
-              "https://i.pinimg.com/736x/88/59/27/8859271ca4063f0d2dcc951d0c9a859b.jpg",
-              "https://seekvectorlogo.com/wp-content/uploads/2018/10/toyo-tires-vector-logo.png",
+              "../images/p6.png",
+             "../images/p7.png",
+             "../images/p8.png",
+             
+              "../images/pir2.png",
+              
+              
               
             ].map((logo, index) => (
               <div

@@ -5,7 +5,7 @@ const paymentMethods = [
  
   {
     id: 2,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXg_kjtqKtVu3sGLuqlv00QMO2ZThXgsPnqA&s", // Visa logo URL
+    image: "../images/b1.png", // Visa logo URL
     title: "Zippay",
     description:
     "Zip gives you the freedom to buy now and pay later. Repayments are flexible to suit your lifestyle - weekly, fortnightly or monthly."
@@ -14,18 +14,26 @@ const paymentMethods = [
   },
   {
     id: 3,
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/39/PayPal_logo.svg", // Mastercard logo URL
+    image: "../images/b2.png", // Mastercard logo URL
     title: "Paypal Pay in 4",
     description:
       "Split your new tyre payments in 4– one every two weeks. It’s interest free fromPayPal.",
   },
   {
     id: 4,
-    image: "https://paymentsplugin.com/wp-content/uploads/2023/11/apple-pay-google-pay-large.png", // Mastercard logo URL
+    image: "../images/b3.png", // Mastercard logo URL
     title: "Apple Pay / Google Pay"
 ,
     description:
       "Make easy and secure digital tyre payments with Apple or Google Pay. Simply tap the button and confirm the payment on your device.",
+  },
+  {
+    id: 4,
+    image: "../images/b4.png", // Mastercard logo URL
+    title: "Afterpay"
+,
+    description:
+      "Pay for your tyres over 4 simple installments and pay nothing extra when you pay on time. No new card application - Instant approval online.",
   },
 ];
 

@@ -6,22 +6,22 @@ const testimonialsData = [
     id: 1,
     feedback:
       "I recently bought tyres from here, and the experience was fantastic! Quick installation and top-quality products.",
-    name: "John Doe",
-    image: "https://randomuser.me/api/portraits/men/1.jpg", // Example image URL
+    name: "Aria Doe",
+    image: "../images/test1.jpg", // Example image URL
   },
   {
     id: 2,
     feedback:
       "Amazing service and great prices! I highly recommend their tyres for both quality and affordability.",
-    name: "Jane Smith",
-    image: "https://randomuser.me/api/portraits/women/2.jpg", // Example image URL
+    name: "Michael Johnson",
+    image: "../images/test3.jpg", // Example image URL
   },
   {
     id: 3,
     feedback:
       "Very professional and efficient. My car feels much safer with the new tyres I purchased here.",
-    name: "Michael Johnson",
-    image: "https://randomuser.me/api/portraits/men/3.jpg", // Example image URL
+    name: "Zoe William",
+    image: "../images/test2.jpg", // Example image URL
   },
 ];
 
