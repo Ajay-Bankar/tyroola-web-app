@@ -5,6 +5,7 @@ import Home from './pages/home';
 import Tyres from './pages/tyres';
 import Wheels from './pages/wheels';
 import Servicerepairs from './pages/servicerepairs';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -24,7 +25,9 @@ function App() {
         </Routes>
 
       </div>
-      
+
+      <Footer/>
+
     </BrowserRouter>
   );
 }

@@ -19,13 +19,12 @@ const Header = () => {
   }, []);
 
   const menuItems = [
+    { label: 'Home', path: '/' },
     { label: 'Tyres', path: '/tyres' },
     { label: 'Wheels', path: '/wheels' },
     { label: 'Service/Repairs', path: '/servicerepairs' },
-    { label: 'Deals', path: '/deals' },
-    { label: 'Fitting/Delivery', path: '/fitting' },
-    { label: 'Tyre Guide', path: '/guide' },
-    { label: 'Help', path: '/help' }
+    
+   
   ];
 
   return (
@@ -103,11 +102,15 @@ const Header = () => {
               </Link>
             </div>
             {menuItems.slice(0, 4).map((item, index) => (
-              <div key={index} className='flex justify-center items-center gap-2'>
-                <Link className=' text-gray-200 font-semibold text-[1rem]' to={item.path}>{item.label}</Link>
-                <p><IoIosArrowDown color='#e9ecef' /></p>
-              </div>
-            ))}
+      <div key={index} className='flex justify-center items-center gap-2'>
+        <Link className=' text-gray-200 font-semibold text-[1rem]' to={item.path}>
+          {item.label}
+        </Link>
+        {item.label !== 'Home' && (
+          <p><IoIosArrowDown color='#e9ecef' /></p>
+        )}
+      </div>
+    ))}
           </div>
           
           <div className='w-full flex justify-end gap-8 items-center'>
