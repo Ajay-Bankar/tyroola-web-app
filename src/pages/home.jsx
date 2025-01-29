@@ -5,6 +5,7 @@ import HeroSection from '@/components/HeroSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import PaymentOptions from '@/components/PaymentOptions';
 
+
 const Home = () => {
 
   
@@ -29,9 +30,9 @@ const Home = () => {
                 <input
                   type="text"
                   placeholder="Enter your vehicle details..."
-                  className="flex-1 px-4 py-2 outline-none"
+                  className="flex-1 px-4 py-2 "
                 />
-                <button className="    flex items-center">
+                <button className="flex items-center">
                   <Search color='#000000' className=" " />
                   
                 </button>
@@ -42,7 +43,7 @@ const Home = () => {
             <div className="hidden md:block relative flex-shrink-0 w-[300px]  h-[300px] ">
               <div className="absolute inset-0  border-4 border-transparent animate-spin-border "></div>
               <img
-                src="https://ik.imagekit.io/ntvz9dezi1x/blog/tyre-tread-indicator.png"
+                src="../images/hero1.jpg"
                 alt="Tyres"
                 className=" border-4 border-white w-full h-full object-contain"
               />
@@ -50,6 +51,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      
 
 
       {/* Features Section */}
