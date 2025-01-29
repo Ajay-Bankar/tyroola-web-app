@@ -4,6 +4,7 @@ import FAQSection from '@/components/FAQSection';
 import HeroSection from '@/components/HeroSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import PaymentOptions from '@/components/PaymentOptions';
+import Slider from '@/components/Slider';
 
 
 const Home = () => {
@@ -13,44 +14,7 @@ const Home = () => {
     <div className="min-h-screen bg-gray-50">
      
       {/* Hero Section */}
-      <div className="relative h-96 bg-gray-900">
-        <div className="absolute inset-0 bg-black/60 flex justify-center items-center">
-          <div className="container mx-auto px-6  flex justify-between items-center">
-            {/* Left Side: Text Content */}
-            <div className="max-w-xl">
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Premium Tyres for Every Vehicle
-              </h1>
-              <p className="text-xl text-gray-200 mb-8">
-                Find the perfect tyres for your car with our expert guidance and competitive prices
-              </p>
-
-              {/* Search Bar */}
-              <div className="flex items-center w-full bg-white rounded-lg p-2">
-                <input
-                  type="text"
-                  placeholder="Enter your vehicle details..."
-                  className="flex-1 px-4 py-2 "
-                />
-                <button className="flex items-center">
-                  <Search color='#000000' className=" " />
-                  
-                </button>
-              </div>
-            </div>
-
-            {/* Right Side: Tyre Image */}
-            <div className="hidden md:block relative flex-shrink-0 w-[300px]  h-[300px] ">
-              <div className="absolute inset-0  border-4 border-transparent animate-spin-border "></div>
-              <img
-                src="../images/hero1.jpg"
-                alt="Tyres"
-                className=" border-4 border-white w-full h-full object-contain"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      <Slider />
 
       
 
@@ -177,7 +141,7 @@ const Home = () => {
           <h2 className="text-3xl font-bold mb-4">Ready to Find Your Perfect Tyres?</h2>
           <p className="mb-8 text-lg">Book an appointment or get expert advice today</p>
           <button
-            onClick={() => window.open("https://www.tyroola.com.au", "_blank")}
+            onClick={() => window.open("https://novatyres.com.au/", "_blank")}
             className="bg-white text-blue-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors"
           >
             Contact Us Now
