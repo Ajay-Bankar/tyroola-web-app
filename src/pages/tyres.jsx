@@ -70,8 +70,8 @@ const TyrePage = () => {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-grow bg-gray-100 p-6">
-        <h2 className="text-3xl font-bold mb-6">
+      <main className="flex-grow bg-gray-100 px-4">
+        <h2 className="text-3xl font-bold p-4 text-center">
           {tyreTypes.find((tyre) => tyre.id === selectedTyreType)?.name}
         </h2>
         {tyreData[selectedTyreType].length > 0 ? (

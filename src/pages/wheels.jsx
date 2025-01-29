@@ -53,8 +53,8 @@ const WheelPage = () => {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-grow bg-gray-100 p-6">
-        <h2 className="text-3xl font-bold mb-6">
+      <main className="flex-grow bg-gray-100 px-4">
+        <h2 className="text-3xl font-bold p-4 text-center">
           {wheelTypes.find((wheel) => wheel.id === selectedTyreType)?.name}
         </h2>
         {wheelData[selectedTyreType].length > 0 ? (
